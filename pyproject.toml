@@ -1,0 +1,29 @@
+[project]
+name = "kitanarashi-takanashi"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [{ name = "nikohonu", email = "nikohonu@proton.me" }]
+dependencies = ["requests>=2.32.3"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+kt = 'kitanarashi_takanashi:main'
+
+[tool.basedpyright]
+typeCheckingMode = "standard"
+
+[tool.pdm]
+distribution = true
+
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+    "basedpyright>=1.23.1",
+]
