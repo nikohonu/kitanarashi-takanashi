@@ -111,7 +111,7 @@ def get_anki_tasks(hours: int):
 
     decks = list(sorted(decks, key=lambda deck: deck.reviews))
 
-    total_session_count = round((hours / 2) + 1)
+    total_session_count = 8
     duration_per_session = round(estimated_duration / total_session_count)
 
     for i in range(total_session_count):
