@@ -3,7 +3,7 @@ name = "kitanarashi-takanashi"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [{ name = "nikohonu", email = "nikohonu@proton.me" }]
-dependencies = ["requests>=2.32.3"]
+dependencies = ["requests>=2.32.3", "msgspec>=0.19.0", "tomli-w>=1.1.0"]
 requires-python = ">=3.13"
 readme = "README.md"
 license = { text = "MIT" }
