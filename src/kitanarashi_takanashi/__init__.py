@@ -201,8 +201,7 @@ def main():
         while duration_per_session > 0:
             if remaining_for_routine > 0:
                 task = routine_tasks.pop(0)
-                if duration_per_session - task.duration >= 0:
-                    duration_per_session -= task.duration
+                duration_per_session -= task.duration
                 remaining_for_routine -= task.duration
                 task.print()
             elif remaining_for_task1 > 0:
